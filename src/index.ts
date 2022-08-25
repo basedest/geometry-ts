@@ -1,4 +1,8 @@
-import Point from './Point';
-let p = new Point(1, 2);
+import Point from './lib/Point';
+import Rectangle from './lib/Rectangle';
+import Triangle from './lib/Triangle';
+import Circle from './lib/Circle';
+import Polygon from './lib/Polygon';
+import RegularPolygon from './lib/RegularPolygon';
 
-console.log(p.toString());
+export { Point, Rectangle, Triangle, Circle, Polygon, RegularPolygon };
