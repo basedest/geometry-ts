@@ -60,17 +60,17 @@ You can expand class structure by defining your own classes using inheritance.
 import { Rectangle, Point } from 'geometry-ts';
 
 class Square extends Rectangle {
-		sideLenght: number;
-		constructor(topLeft: Point, sideLenght: number) {
-			super(topLeft, new Point(topLeft.x + sideLenght, topLeft.y + sideLenght));
-			this.sideLenght = sideLenght;
-		}
-		toString(): string {
-			return `Square with top left corner ${this.vertices[0].toString()} and side ${this.sideLenght}`;
-		}
-	}
+    sideLenght: number;
+    constructor(topLeft: Point, sideLenght: number) {
+        super(topLeft, new Point(topLeft.x + sideLenght, topLeft.y + sideLenght));
+        this.sideLenght = sideLenght;
+    }
+    toString(): string {
+        return `Square with top left corner ${this.vertices[0].toString()} and side ${this.sideLenght}`;
+    }
+}
 
-	const square = new Square(new Point(0, 0), 10);
-    console.log(square.toString()); // Square with top left corner (0,0) and side 10
-    console.log(square.area); // 100
+const square = new Square(new Point(0, 0), 10);
+console.log(square.toString()); // Square with top left corner (0,0) and side 10
+console.log(square.area); // 100
 ```
