@@ -1,11 +1,12 @@
 {
   "name": "geometry-ts",
-  "version": "0.2.0",
-  "description": "Library for working with 2D figures",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "version": "0.3.0",
+  "description": "Library for working with geometric objects",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
     "build": "tsc",
+    "prepublish": "npm run build",
     "lint": "eslint . --ext .ts",
     "test": "jest"
   },
@@ -17,8 +18,9 @@
   "author": "Ivan Scherbakov (@basedest)",
   "repository": {
     "type": "git",
-    "url": "github.com/basedest/geometry-ts"
+    "url": "git@github.com:basedest/geometry-ts.git"
   },
+  "homepage": "https://github.com/basedest/geometry-ts",
   "license": "MIT",
   "devDependencies": {
     "@jest/globals": "^29.0.0",

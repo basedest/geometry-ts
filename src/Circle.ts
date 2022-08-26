@@ -39,10 +39,13 @@ export default class Circle implements IShape {
 		this.center.move(x, y);
 	}
 
-	getArea(): number {
+	get diameter(): number {
+		return 2 * this.radius;
+	}
+	get area(): number {
 		return Math.PI * this.radius * this.radius;
 	}
-	getPerimeter(): number {
+	get perimeter(): number {
 		return 2 * Math.PI * this.radius;
 	}
 

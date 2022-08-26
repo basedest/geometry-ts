@@ -1,14 +1,13 @@
 import Point from './Point';
 import IShape from './Shape';
 
-
 /**
  * Class that represents a Polygon in 2D space.
  * 
  * @internal
  */
 export default class Polygon implements IShape {
-	vertices: Point[];
+	protected vertices: Point[];
 	constructor(vertices: Point[]) {
 		this.vertices = vertices;
 	}

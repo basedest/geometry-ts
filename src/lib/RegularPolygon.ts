@@ -21,10 +21,10 @@ export default class RegularPolygon extends Polygon {
 		this.numberOfSides = numberOfSides;
 	}
 	
-	getArea(): number {
+	get area(): number {
 		return (this.numberOfSides * this.radius * this.radius) / (4 * Math.tan(Math.PI / this.numberOfSides));
 	}
-	getPerimeter(): number {
+	get perimeter(): number {
 		return this.numberOfSides * this.radius * Math.PI / this.numberOfSides;
 	}
 	toString(): string {

@@ -1,6 +1,6 @@
 // Testing public library features using classes Rectangle and and Point.
 
-import * as gl from '../index';
+import * as gl from '../src/index';
 test('Making Square class and testing inherited methods', () => {
 	class Square extends gl.Rectangle {
 		sideLenght: number;
@@ -15,7 +15,7 @@ test('Making Square class and testing inherited methods', () => {
 
 	const square = new Square(new gl.Point(0, 0), 10);
 	const expectedLog = 'Square with top left corner (0, 0) and side 10 with area 100 and perimeter 40';
-	const actualLog = `${square.toString()} with area ${square.getArea()} and perimeter ${square.getPerimeter()}`;
+	const actualLog = `${square.toString()} with area ${square.area} and perimeter ${square.perimeter}`;
 
 	expect(actualLog).toBe(expectedLog);
 });

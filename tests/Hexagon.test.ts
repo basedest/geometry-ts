@@ -1,7 +1,7 @@
 // Testing internal library features using classes RegularPolygon and and Point.
 
-import { Point } from '../index';
-import RegularPolygon from '../lib/RegularPolygon';
+import { Point } from '../src/index';
+import RegularPolygon from '../src/lib/RegularPolygon';
 
 test('Making Hexagon class and testing inherited methods', () => {
 	class Hexagon extends RegularPolygon {
@@ -16,7 +16,7 @@ test('Making Hexagon class and testing inherited methods', () => {
 
 	const hexagon = new Hexagon(new Point(0, 0), 10);
 	const expectedLog = 'Hexagon with center (0, 0) and radius 10 with area 300 and perimeter 60';
-	const actualLog = `${hexagon.toString()} with area ${hexagon.getArea()} and perimeter ${hexagon.getPerimeter()}`;
+	const actualLog = `${hexagon.toString()} with area ${hexagon.area} and perimeter ${hexagon.perimeter}`;
 	
 	expect(actualLog).toBe(expectedLog);
 });

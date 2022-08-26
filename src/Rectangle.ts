@@ -12,17 +12,17 @@ export default class Rectangle extends Polygon {
 		]);
 	}
 
-	getWidth(): number {
+	get width(): number {
 		return this.vertices[2].x - this.vertices[0].x;
 	}
-	getHeight(): number {
+	get height(): number {
 		return this.vertices[2].y - this.vertices[0].y;
 	}
-	getArea(): number {
-		return this.getWidth() * this.getHeight();
+	get area(): number {
+		return this.width * this.height;
 	}
-	getPerimeter(): number {
-		return (this.getWidth() + this.getHeight()) * 2;
+	get perimeter(): number {
+		return (this.width + this.height) * 2;
 	}
 
 	toString(): string {

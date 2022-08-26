@@ -1,4 +1,3 @@
-
 /**
  * Interface that represents a shape on 2D space and basic operations on it.
  * 
