@@ -16,7 +16,7 @@ test('Making Hexagon class and testing inherited methods', () => {
 
 	const hexagon = new Hexagon(new Point(0, 0), 10);
 	const expectedLog = 'Hexagon with center (0, 0) and radius 10 with area 300 and perimeter 60';
-	const actualLog = `${hexagon.toString()} with area ${hexagon.area} and perimeter ${hexagon.perimeter}`;
+	const actualLog = `${hexagon.toString()} with area ${Math.round(hexagon.area)} and perimeter ${Math.round(hexagon.perimeter)}`;
 	
 	expect(actualLog).toBe(expectedLog);
 });

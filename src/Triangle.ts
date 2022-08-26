@@ -1,4 +1,4 @@
-import Point from './lib/Point';
+import Point from './Point';
 import Polygon from './lib/Polygon';
 
 export default class Triangle extends Polygon {
@@ -7,6 +7,11 @@ export default class Triangle extends Polygon {
 		super([a, b, c]);
 	}
 	
+	/**
+	 * Object stringifier.
+	 * 
+	 * @returns string - some information about the triangle.
+	 */
 	toString(): string {
 		return `Triangle with vertices ${this.vertices.map(p => p.toString()).join(', ')}`;
 	}

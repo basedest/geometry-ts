@@ -1,4 +1,4 @@
-import Point from './lib/Point';
+import Point from './Point';
 import Polygon from './lib/Polygon';
 
 export default class Rectangle extends Polygon {
@@ -25,6 +25,11 @@ export default class Rectangle extends Polygon {
 		return (this.width + this.height) * 2;
 	}
 
+	/**
+	 * Object stringifier.
+	 * 
+	 * @returns string - some information about the rectangle.
+	 */
 	toString(): string {
 		return `Rectangle with top left ${this.vertices[0].toString()} and bottom right ${this.vertices[2].toString()}`;
 	}

@@ -44,7 +44,7 @@ export default class Point {
 	}
 	
 	/**
-	 * Stringifies the point.
+	 * Object stringifier.
 	 * 
 	 * @returns string - string representation of the point coordinates.
 	 */

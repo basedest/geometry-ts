@@ -1,6 +1,12 @@
-import Point from './lib/Point';
+import Point from './Point';
 import IShape from './lib/Shape';
 
+
+/**
+ * Class that represents a Circle in 2D space.
+ * 
+ * @public
+ */
 export default class Circle implements IShape {
 	center: Point;  //coordinates of the center of the circle
 	radius: number; //radius of the circle
@@ -39,16 +45,38 @@ export default class Circle implements IShape {
 		this.center.move(x, y);
 	}
 
+	/**
+	 * Diameter getter.
+	 * 
+	 * @returns number - diameter of the circle.
+	 */
 	get diameter(): number {
 		return 2 * this.radius;
 	}
+
+	/**
+	 * Area getter.
+	 * 
+	 * @returns number - area of the circle.
+	 */
 	get area(): number {
 		return Math.PI * this.radius * this.radius;
 	}
-	get perimeter(): number {
-		return 2 * Math.PI * this.radius;
+
+	/**
+	 * Computes the circumference of the circle.
+	 * 
+	 * @returns number - circumference of the circle.
+	 */
+	get circumference(): number {
+		return Math.PI * this.diameter;
 	}
 
+	/**
+	 * Object stringifier.
+	 * 
+	 * @returns string - some information about the circle.
+	 */
 	toString(): string {
 		return `Circle with center ${this.center.toString()} and radius ${this.radius}`;
 	}
