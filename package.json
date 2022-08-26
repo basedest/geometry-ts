@@ -1,5 +1,5 @@
 {
-  "name": "geometry-ts",
+  "name": "@basedest/geometry-ts",
   "version": "1.0.2",
   "description": "Library for working with geometric objects",
   "main": "dist/src/index.js",
@@ -19,9 +19,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/basedest/geometry-ts.git"
-  },
-  "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
   },
   "homepage": "https://github.com/basedest/geometry-ts",
   "license": "MIT",
