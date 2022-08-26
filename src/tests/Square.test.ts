@@ -1,5 +1,6 @@
-import * as gl from '../index';
+// Testing public library features using classes Rectangle and and Point.
 
+import * as gl from '../index';
 test('Making Square class and testing inherited methods', () => {
 	class Square extends gl.Rectangle {
 		sideLenght: number;
@@ -8,7 +9,7 @@ test('Making Square class and testing inherited methods', () => {
 			this.sideLenght = sideLenght;
 		}
 		toString(): string {
-			return `Square with top left corner ${this.points[0].toString()} and side ${this.sideLenght}`;
+			return `Square with top left corner ${this.vertices[0].toString()} and side ${this.sideLenght}`;
 		}
 	}
 

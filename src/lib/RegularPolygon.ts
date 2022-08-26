@@ -1,13 +1,13 @@
 import Point from './Point';
 import Polygon from './Polygon';
 
-function getPoints(center: Point, radius: number, numberOfSides: number): Point[] {
-	const points = [];
+function getvertices(center: Point, radius: number, numberOfSides: number): Point[] {
+	const vertices = [];
 	for (let i = 0; i < numberOfSides; i++) {
 		const angle = (i * 2 * Math.PI) / numberOfSides;
-		points.push(new Point(center.x + radius * Math.cos(angle), center.y + radius * Math.sin(angle)));
+		vertices.push(new Point(center.x + radius * Math.cos(angle), center.y + radius * Math.sin(angle)));
 	}
-	return points;
+	return vertices;
 }
 
 export default class RegularPolygon extends Polygon {
@@ -15,12 +15,12 @@ export default class RegularPolygon extends Polygon {
 	radius: number;
 	numberOfSides: number;
 	constructor(center: Point, radius: number, numberOfSides: number) {
-		super(getPoints(center, radius, numberOfSides));
+		super(getvertices(center, radius, numberOfSides));
 		this.center = center;
 		this.radius = radius;
 		this.numberOfSides = numberOfSides;
 	}
-    
+	
 	getArea(): number {
 		return (this.numberOfSides * this.radius * this.radius) / (4 * Math.tan(Math.PI / this.numberOfSides));
 	}

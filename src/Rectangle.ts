@@ -1,8 +1,8 @@
-import Point from './Point';
-import Polygon from './Polygon';
+import Point from './lib/Point';
+import Polygon from './lib/Polygon';
 
 export default class Rectangle extends Polygon {
-    
+	
 	constructor(topLeft: Point, bottomRight: Point) {
 		super([
 			topLeft,
@@ -13,10 +13,10 @@ export default class Rectangle extends Polygon {
 	}
 
 	getWidth(): number {
-		return this.points[2].x - this.points[0].x;
+		return this.vertices[2].x - this.vertices[0].x;
 	}
 	getHeight(): number {
-		return this.points[2].y - this.points[0].y;
+		return this.vertices[2].y - this.vertices[0].y;
 	}
 	getArea(): number {
 		return this.getWidth() * this.getHeight();
@@ -26,6 +26,6 @@ export default class Rectangle extends Polygon {
 	}
 
 	toString(): string {
-		return `Rectangle with top left ${this.points[0].toString()} and bottom right ${this.points[2].toString()}`;
+		return `Rectangle with top left ${this.vertices[0].toString()} and bottom right ${this.vertices[2].toString()}`;
 	}
 }
