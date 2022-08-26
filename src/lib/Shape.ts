@@ -1,3 +1,4 @@
+
 /**
  * Interface that represents a shape on 2D space and basic operations on it.
  * 
@@ -24,4 +25,5 @@ export default interface IShape {
 	 * @returns string - some information about the shape.
 	 */
 	toString(): string;
+// eslint-disable-next-line semi
 }

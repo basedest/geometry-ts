@@ -11,7 +11,7 @@
     "test": "jest dist/tests"
   },
   "keywords": [
-    "2d",
+    "2d", 
     "geometry",
     "math"
   ],

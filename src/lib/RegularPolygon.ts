@@ -4,7 +4,6 @@ import Polygon from './Polygon';
 /**
  * Helper function to create vertices for Polygon base class.
  * 
- * 
  * @param center - center of the regular polygon.
  * @param radius - radius of the regular polygon.
  * @param numberOfSides - number of sides of the regular polygon.
@@ -28,7 +27,7 @@ function getVertices(center: Point, radius: number, numberOfSides: number): Poin
 /**
  * Class that represents a regular polygon in 2D space.
  * 
- * @public
+ * @internal
  * 
  * @see {@link https://en.wikipedia.org/wiki/Regular_polygon}
  */
