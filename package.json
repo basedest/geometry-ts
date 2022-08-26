@@ -1,5 +1,5 @@
 {
-  "name": "@basedest/geometry-ts",
+  "name": "geometry-ts",
   "version": "1.0.2",
   "description": "Library for working with geometric objects",
   "main": "dist/src/index.js",
