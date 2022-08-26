@@ -62,7 +62,7 @@ import { Rectangle, Point } from 'geometry-ts';
 class Square extends Rectangle {
     sideLenght: number;
     constructor(topLeft: Point, sideLenght: number) {
-        super(topLeft, new Point(topLeft.x + sideLenght, topLeft.y + sideLenght));
+        super(topLeft, new Point(topLeft.x + sideLenght, topLeft.y - sideLenght));
         this.sideLenght = sideLenght;
     }
     toString(): string {

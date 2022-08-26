@@ -5,7 +5,7 @@ test('Making Square class and testing inherited methods', () => {
 	class Square extends gl.Rectangle {
 		sideLenght: number;
 		constructor(topLeft: gl.Point, sideLenght: number) {
-			super(topLeft, new gl.Point(topLeft.x + sideLenght, topLeft.y + sideLenght));
+			super(topLeft, new gl.Point(topLeft.x + sideLenght, topLeft.y - sideLenght));
 			this.sideLenght = sideLenght;
 		}
 		toString(): string {

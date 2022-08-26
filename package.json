@@ -1,6 +1,6 @@
 {
   "name": "geometry-ts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Library for working with geometric objects",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
@@ -18,7 +18,10 @@
   "author": "Ivan Scherbakov (@basedest)",
   "repository": {
     "type": "git",
-    "url": "git@github.com:basedest/geometry-ts.git"
+    "url": "https://github.com/basedest/geometry-ts.git"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
   },
   "homepage": "https://github.com/basedest/geometry-ts",
   "license": "MIT",
