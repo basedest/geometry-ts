@@ -27,7 +27,7 @@ Has 2 main parameters: top-left and bottom-right corners and 4 calculated parame
 
 Represents triangle in 2D space.    
 **Public properties:**
-- edges - array of 3 points that represent triangle edges
+- edges - array of 3 numbers that represent triangle edges
 - perimeter - perimeter of the triangle. *(calculated property)* 
 - area - area of the triangle. *(calculated property)*
 
